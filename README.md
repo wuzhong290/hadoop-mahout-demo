@@ -1,11 +1,3 @@
-# mahout-demo
-itembased算法
-
-http://blog.csdn.net/fansy1990/article/details/39692741?utm_source=tuicool&utm_medium=referral
-
-http://www.occamslab.com/petricek/data/
-
-http://www.occamslab.com/petricek/data/libimseti-complete.zip
 一、安装mahout
 1、下载http://archive.cloudera.com/cdh5/cdh/5/mahout-0.9-cdh5.7.0.tar.gz
 由于下载很慢，使用如下

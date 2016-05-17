@@ -12,7 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<mahout.version>0.9-cdh5.5.0</mahout.version>
+		<mahout.version>0.9-cdh5.7.0</mahout.version>
 		<slf4j.version>1.6.4</slf4j.version>
 	</properties>
 

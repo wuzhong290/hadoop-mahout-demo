@@ -54,7 +54,14 @@ mahout RecommenderJob 参数含义
 --output(path): 结算结果的输出目录
 
 --similarityClassname (classname): 向量相似度计算类，可选的相似度算法包括CityBlockSimilarity，CooccurrenceCountSimilarity，CosineSimilarity，CountbasedMeasure，EuclideanDistanceSimilarity，LoglikelihoodSimilarity，PearsonCorrelationSimilarity, TanimotoCoefficientSimilarity。注意参数中要带上包名。
-
+    public enum VectorSimilarityMeasures {
+      SIMILARITY_COOCCURRENCE(CooccurrenceCountSimilarity.class),
+      SIMILARITY_LOGLIKELIHOOD(LoglikelihoodSimilarity.class),
+      SIMILARITY_TANIMOTO_COEFFICIENT(TanimotoCoefficientSimilarity.class),
+      SIMILARITY_CITY_BLOCK(CityBlockSimilarity.class),
+      SIMILARITY_COSINE(CosineSimilarity.class),
+      SIMILARITY_PEARSON_CORRELATION(PearsonCorrelationSimilarity.class),
+      SIMILARITY_EUCLIDEAN_DISTANCE(EuclideanDistanceSimilarity.class);
 --usersFile (path): 指定一个包含了一个或多个存储userID的文件路径，仅为该路径下所有文件包含的userID做推荐计算 (该选项可选)
 
 --itemsFile (path): 指定一个包含了一个或多个存储itemID的文件路径，仅为该路径下所有文件包含的itemID做推荐计算 (该选项可选)
